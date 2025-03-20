@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreightSecure: Cyber Awareness Training</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/interface-styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="role-selection" class="overlay">
+            <h1>FreightSecure: Cyber Awareness Training</h1>
+            <p>Select your role to begin:</p>
+            <button id="carrier-btn" class="role-btn">Carrier</button>
+            <button id="broker-btn" class="role-btn">Broker</button>
+        </div>
+        
+        <div id="tutorial" class="overlay hidden">
+            <div id="tutorial-content"></div>
+            <button id="next-tutorial" class="btn">Next</button>
+        </div>
+        
+        <div id="hud" class="hidden">
+            <div id="score">Score: <span id="score-value">0</span></div>
+            <div id="timer">Time: <span id="timer-value">5:00</span></div>
+        </div>
+        
+        <div id="feedback-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="feedback-title">Feedback Title</h2>
+                <p id="feedback-message">Feedback message will appear here.</p>
+                <button id="feedback-ok" class="btn">OK</button>
+            </div>
+        </div>
+        
+        <div id="computer-interface" class="overlay hidden">
+            <!-- Computer interface will be populated dynamically -->
+        </div>
+    </div>
+
+    <!-- Three.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/PointerLockControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    
+    <!-- Shader dependencies for post-processing -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/shaders/FXAAShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    
+    <!-- Post-processing scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/postprocessing/UnrealBloomPass.js"></script>
+    
+    <!-- Tween.js for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+    <script src="./js/tween-fallback.js"></script>
+    
+    <!-- Game scripts -->
+    <script src="./js/utils.js"></script>
+    <script src="./js/scenario.js"></script>
+    <script src="./js/environment.js"></script>
+    <script src="./js/tutorial.js"></script>
+    <script src="./js/game.js"></script>
+</body>
+</html> 

@@ -1,0 +1,138 @@
+/* Enhanced interface styles */
+
+/* Task instructions */
+.task-instruction {
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    color: #333;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 0.9em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Email interface enhancements */
+.email-interface {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.email-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-item.current {
+    border-left: 4px solid #3498db;
+}
+
+.email-sender {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.email-subject {
+    color: #555;
+    margin-bottom: 3px;
+}
+
+.email-date {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.email-details {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.email-detail {
+    margin-bottom: 5px;
+}
+
+/* Warning indicators */
+.suspicious-domain, .suspicious-detail {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.suspicious-attachment {
+    color: #e74c3c;
+}
+
+.attachment-warning {
+    font-size: 0.8em;
+    color: #e74c3c;
+    margin-left: 10px;
+}
+
+.warning-icon {
+    color: #e74c3c;
+    margin-left: 5px;
+}
+
+/* Action instructions and buttons */
+.action-instructions {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Button styles */
+.danger-btn {
+    background-color: #e74c3c;
+}
+
+.danger-btn:hover {
+    background-color: #c0392b;
+}
+
+.safe-btn {
+    background-color: #2ecc71;
+}
+
+.safe-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Rate confirmation enhancements */
+.rate-confirmation-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rate-confirmation-section {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Tooltip styles */
+[title] {
+    position: relative;
+    cursor: help;
+}
+
+[title]:hover:after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    z-index: 100;
+} 

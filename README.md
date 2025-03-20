@@ -32,7 +32,7 @@ The application uses advanced Three.js techniques to create a realistic and enga
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/freightsecure.git
+   git clone https://github.com/freightgames/freightsecure.git
    ```
 
 2. Navigate to the project directory:
@@ -84,4 +84,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - Educational content based on industry best practices and research
-- Inspired by real-world fraud scenarios in the freight industry "# FreightSecure" 
+- Inspired by real-world fraud scenarios in the freight industry 
